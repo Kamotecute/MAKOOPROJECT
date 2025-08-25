@@ -14,7 +14,7 @@
         <form class="login-form" onsubmit="return login(event)">
             <input type="text" id="username" placeholder="Name" required>
             <input type="password" id="password" placeholder="Password" required>
-            <p>(Password clue: Our Anniversary)</p>
+            <p>(Password clue: First Baby Name)</p>
             <button type="submit">LOGIN</button>
         </form>
 
@@ -32,7 +32,7 @@
         event.preventDefault();
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
-    if (username === "Lara" || username === "lara" || username === "Lara Grace B. Paguia" || username === "Lara Paguia" ||  username  === "Lara Grace" && password === "030522") {
+    if (username === "Lara" || username === "lara" || username === "Lara Grace B. Paguia" || username === "Lara Paguia" ||  username  === "Lara Grace" && password === "tote") {
         window.location.href = "index1.html";
     } else {
         alert("Incorrect username or password</3 \nTry again!");
