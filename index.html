@@ -32,6 +32,20 @@
     <div class="heart"></div>
     <div class="heart"></div>
   </div>
+
+      <script>
+    // Ensures audio can play even with browser restrictions
+    document.addEventListener("DOMContentLoaded", () => {
+      const audio = document.getElementById("bg-music");
+      audio.volume = 0.5; // set volume (0.0 - 1.0)
+      
+      // Try to play audio (some browsers require user interaction first)
+      audio.play().catch(() => {
+        console.log("Autoplay blocked. Waiting for user interaction...");
+        document.body.addEventListener("click", () => audio.play(), { once: true });
+      });
+    });
+  </script>
     
     <script>
     function login(event) {
