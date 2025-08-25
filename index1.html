@@ -92,7 +92,7 @@
   });
 </script>
 
-    <audio id="bg-music" autoplay loop>
+    <audio id="bg-mp3" autoplay loop>
     <source src="assets/mp3/OP1.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
@@ -100,7 +100,7 @@
   <script>
     // Ensures audio can play even with browser restrictions
     document.addEventListener("DOMContentLoaded", () => {
-      const audio = document.getElementById("bg-music");
+      const audio = document.getElementById("bg-mp3");
       audio.volume = 0.5; // set volume (0.0 - 1.0)
       
       // Try to play audio (some browsers require user interaction first)
